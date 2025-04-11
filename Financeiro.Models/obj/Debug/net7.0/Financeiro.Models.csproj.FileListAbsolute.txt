@@ -1,0 +1,16 @@
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\bin\Debug\net7.0\Financeiro.Models.dll.config
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\bin\Debug\net7.0\Financeiro.Models.deps.json
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\bin\Debug\net7.0\Financeiro.Models.dll
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\bin\Debug\net7.0\Financeiro.Models.pdb
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.csproj.AssemblyReference.cache
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.AssemblyInfoInputs.cache
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.AssemblyInfo.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.csproj.CoreCompileInputs.cache
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.sourcelink.json
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.dll
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\refint\Financeiro.Models.dll
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.pdb
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\ref\Financeiro.Models.dll
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\bin\Debug\net7.0\Financeiro.Models.runtimeconfig.json
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Models\obj\Debug\net7.0\Financeiro.Models.genruntimeconfig.cache
