@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Financeiro.WpfTelas" xmlns:usc="clr-namespace:Financeiro.WpfTelas.UserControls"
         mc:Ignorable="d"
-         Title="ERP - Sistema de Gestão" Height="600" Width="1000"
+         Title="ERP - Sistema de Gestão" Height="600" Width="1500"
         WindowStartupLocation="CenterScreen" ResizeMode="CanResize"
         Background="#ECF0F1">
     <Grid>
@@ -29,21 +29,19 @@
             <Button Content="📊 Estoque" Style="{StaticResource MenuButton}" />
             <Button Content="💰 Financeiro" Style="{StaticResource MenuButton}" />
             <Button Content="📄 Relatórios" Style="{StaticResource MenuButton}" />
-            <Button Content="⚙️ Configurações" Style="{StaticResource MenuButton}" />
         </StackPanel>
 
         <!-- Conteúdo principal -->
         <Grid Grid.Column="1" Margin="10">
-            <Border Background="White" CornerRadius="8" Padding="20" >
+            <Border CornerRadius="8" Padding="20" >
                 <StackPanel>
                     <TextBlock Text="Bem-vindo ao Sistema ERP"
-                               FontSize="24" FontWeight="Bold"
-                               Foreground="#2C3E50" Margin="0,0,0,10"/>
+                               Style="{StaticResource ComumTitulo}"/>
                     <TextBlock Text="Escolha um módulo no menu à esquerda para começar."
-                               FontSize="14" Foreground="#7F8C8D"/>
+                               Style="{StaticResource ComumBlock}"/>
                 </StackPanel>
             </Border>
         </Grid>
-        <usc:uscCadastroProduto x:Name="uscCadProduto" Visibility="Collapsed" Grid.Column="1"/>
+        <usc:uscCadastroProduto x:Name="uscCadProduto" Visibility="Collapsed" Grid.Column="1" Height="500" VerticalAlignment="Top"/>
     </Grid>
 </Window>

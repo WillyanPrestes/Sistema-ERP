@@ -15,7 +15,7 @@ namespace Financeiro.Models.Objetos.Estoque
         [Required]
         public string? _Descricao { get; set; }
         [Required]
-        public decimal? oCusto { get; set; }
+        public decimal? _Custo { get; set; }
         [Required]
         public decimal? _MargemLucro { get; set; }
         [Required]
@@ -25,7 +25,7 @@ namespace Financeiro.Models.Objetos.Estoque
         [Required]
         public decimal? _EstoqueMinimo { get; set; }
         [Required]
-        public string? _UnidadeMedia { get; set; }
+        public string? _UnidadeMedida { get; set; }
         [Required]
         public bool? _Ativo { get; set; }
         [Required]

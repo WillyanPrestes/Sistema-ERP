@@ -24,5 +24,6 @@ namespace Financeiro.WpfTelas.UserControls
         {
             InitializeComponent();
         }
+
     }
 }

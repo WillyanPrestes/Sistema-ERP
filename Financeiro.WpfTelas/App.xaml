@@ -9,8 +9,7 @@
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="Padding" Value="10 5"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="25"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
@@ -33,10 +32,12 @@
             <Setter Property="Background" Value="#2980B9"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Padding" Value="10,5"/>
             <Setter Property="Margin" Value="5"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="35"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -52,6 +53,31 @@
             <Setter Property="Background" Value="#95A5A6"/>
         </Style>
 
+        <Style x:Key="ComumBox" TargetType="TextBox">
+            <Setter Property="Margin" Value="5,0,5,0"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <Style x:Key="ComumComboBox" TargetType="ComboBox">
+            <Setter Property="Margin" Value="5,0,5,0"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        
+        <Style x:Key="ComumStackPanel" TargetType="StackPanel">
+            <Setter Property="Margin" Value="0,0,5,5"/>
+        </Style>
+        
+        <Style x:Key="ComumBlock" TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <Style x:Key="ComumTitulo" TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2C3E50"/>
+        </Style>
     </Application.Resources>
     
 </Application>
