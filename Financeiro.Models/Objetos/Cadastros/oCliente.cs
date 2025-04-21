@@ -12,10 +12,10 @@ namespace Financeiro.Models.Objetos.Cadastros
     public class oCliente
     {
         [Key]
-        public int _IdCliente { get; set; }
-        public int _IdPessoa { get; set; }
+        public int? _IdCliente { get; set; }
+        public int? _IdPessoa { get; set; }
         [ForeignKey("_IdPessoa")]
-        public oPessoa _Pessoa { get; set; }
+        public oPessoa? _Pessoa { get; set; }
         [NotMapped]
         public List<oContasReceber>? _ContasReceber { get; set; }
     }

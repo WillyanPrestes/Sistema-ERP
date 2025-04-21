@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="Financeiro.WpfTelas.UserControls.uscCadastroProduto"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"   Background="#ECF0F1">
+    <Grid Margin="30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Background="White" Padding="20" CornerRadius="10" >
+            <StackPanel>
+                <!-- Título -->
+                <TextBlock Text="Cadastro de Produto"
+                           FontSize="22" FontWeight="Bold"
+                           Foreground="#2C3E50"
+                           Margin="0 0 0 20"/>
+
+                <!-- Formulário -->
+                <Grid Margin="0 0 0 20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Nome -->
+                    <TextBlock Text="Descrição:" Grid.Row="0" Grid.Column="0"
+                               VerticalAlignment="Center" Margin="0 5"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Margin="0 5"/>
+
+                    <!-- Categoria -->
+                    <TextBlock Text="Categoria:" Grid.Row="1" Grid.Column="0"
+                               VerticalAlignment="Center" Margin="0 5"/>
+                    <ComboBox Grid.Row="1" Grid.Column="1" Margin="0 5">
+                        <ComboBoxItem Content="Informática"/>
+                        <ComboBoxItem Content="Papelaria"/>
+                        <ComboBoxItem Content="Alimentos"/>
+                    </ComboBox>
+
+                    <!-- Preço -->
+                    <TextBlock Text="Preço:" Grid.Row="2" Grid.Column="0"
+                               VerticalAlignment="Center" Margin="0 5"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0 5"/>
+
+                    <!-- Estoque -->
+                    <TextBlock Text="Estoque Inicial:" Grid.Row="3" Grid.Column="0"
+                               VerticalAlignment="Center" Margin="0 5"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="0 5"/>
+                </Grid>
+
+                <!-- Botões -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Salvar" Style="{StaticResource BotaoPadrao}" Margin="0 0 10 0"/>
+                    <Button Content="Cancelar" Style="{StaticResource BotaoSecundario}" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

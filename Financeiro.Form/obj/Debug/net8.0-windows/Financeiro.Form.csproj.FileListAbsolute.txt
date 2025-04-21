@@ -1,0 +1,5 @@
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Form\obj\Debug\net8.0-windows\Financeiro.Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Form\obj\Debug\net8.0-windows\Financeiro.Form.AssemblyInfoInputs.cache
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Form\obj\Debug\net8.0-windows\Financeiro.Form.AssemblyInfo.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Form\obj\Debug\net8.0-windows\Financeiro.Form.csproj.CoreCompileInputs.cache
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.Form\obj\Debug\net8.0-windows\Financeiro.Form.sourcelink.json
