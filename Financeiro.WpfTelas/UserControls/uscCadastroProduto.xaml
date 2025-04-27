@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="800"  Background="#ECF0F1">
+             Height="400" d:DesignWidth="800"  Background="#ECF0F1">
 
-    <Grid Margin="30">
+    <Grid Margin="10">
         <Border Background="White" Padding="20" CornerRadius="10">
             <StackPanel>
                 <!-- Título -->
@@ -82,12 +82,6 @@
 
                     </StackPanel>
                 </Grid>
-
-                <!-- Botões -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0" >
-                    <Button Content="Salvar" Style="{StaticResource BotaoPadrao}" Margin="0 0 10 0" Width="200"/>
-                    <Button Content="Cancelar" Style="{StaticResource BotaoSecundario}" Margin="0 0 10 0" Width="200"/>
-                </StackPanel>
             </StackPanel>
         </Border>
     </Grid>

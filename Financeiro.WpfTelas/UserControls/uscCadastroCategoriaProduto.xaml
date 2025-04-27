@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
              mc:Ignorable="d" >
-    <Grid Margin="30">
+    <Grid Margin="10">
         <Border Background="White" Padding="20" CornerRadius="10">
             <StackPanel>
                 <!-- Título -->
@@ -14,15 +14,6 @@
                 <!-- Formulário -->
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -37,12 +28,6 @@
                     </StackPanel>
 
                 </Grid>
-
-                <!-- Botões -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0" >
-                    <Button Content="Salvar" Style="{StaticResource BotaoPadrao}" Margin="0 0 10 0" Width="200"/>
-                    <Button Content="Cancelar" Style="{StaticResource BotaoSecundario}" Margin="0 0 10 0" Width="200"/>
-                </StackPanel>
             </StackPanel>
         </Border>
     </Grid>

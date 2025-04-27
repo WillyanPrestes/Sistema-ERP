@@ -8,4 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Imagens\floppy-disk_346056.png" />
+    <None Remove="Imagens\multiply_399274.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\floppy-disk_346056.png" />
+    <Resource Include="Imagens\multiply_399274.png" />
+  </ItemGroup>
+
 </Project>

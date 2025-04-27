@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Financeiro.WpfTelas.Telas;
 
 namespace Financeiro.WpfTelas
 {
@@ -23,7 +24,26 @@ namespace Financeiro.WpfTelas
 
         private void btnCadastros_Click(object sender, RoutedEventArgs e)
         {
-            this.uscCadProduto.Visibility = Visibility.Visible;
+            spSubmenuCadastros.Visibility = spSubmenuCadastros.Visibility == Visibility.Visible
+                                        ? Visibility.Collapsed
+                                        : Visibility.Visible;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            winCadastroProduto win = new winCadastroProduto();
+            win.ShowDialog();
+        }
+
+        private void btnCategoriaProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            winCadastroCategoriaProduto win =new winCadastroCategoriaProduto();
+            win.ShowDialog();
         }
     }
 }

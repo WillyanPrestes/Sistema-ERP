@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Financeiro.WpfTelas.UserControls.Menus.menuSalvar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls.Menus"
+             mc:Ignorable="d" 
+             Height="140" d:DesignWidth="800">
+    <Grid Background="#2C3E50">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="15,10,0,0">
+            <Button Background="Transparent" x:Name="btnSalvar" BorderBrush="Transparent">
+                <StackPanel>
+                    <Image Source="/Imagens/floppy-disk_346056.png" Width="80"/>
+                    <TextBlock Text="Salvar" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
+                </StackPanel>
+            </Button>
+            <Button Background="Transparent" x:Name="btnSair" BorderBrush="Transparent" Margin="25,0,0,0">
+                <StackPanel>
+                    <Image Source="/Imagens/multiply_399274.png"  Width="80"/>
+                    <TextBlock Text="Cancelar" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

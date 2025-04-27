@@ -52,6 +52,12 @@
         <Style x:Key="BotaoSecundario" TargetType="Button" BasedOn="{StaticResource BotaoPadrao}">
             <Setter Property="Background" Value="#95A5A6"/>
         </Style>
+        <Style x:Key="SubMenuButton" TargetType="Button" BasedOn="{StaticResource MenuButton}">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="10 2 10 2"/>
+            <Setter Property="Padding" Value="10 5"/>
+            <Setter Property="Background" Value="#34495E"/>
+        </Style>
 
         <Style x:Key="ComumBox" TargetType="TextBox">
             <Setter Property="Margin" Value="5,0,5,0"/>

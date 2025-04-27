@@ -23,3 +23,11 @@ C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscCadastroProduto.g.cs
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscCadastroProduto.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscCadastroCategoriaProduto.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscCadastroCategoriaProduto.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winCadastroCategoriaProduto.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuSalvar.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winCadastroCategoriaProduto.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuSalvar.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winCadastroProduto.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winCadastroProduto.baml
