@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <menus:menuSalvar />
+        <menus:menuSalvar x:Name="menuSalvar" />
         <usc:uscCadastroCategoriaProduto Grid.Row="1"/>
     </Grid>
 </Window>

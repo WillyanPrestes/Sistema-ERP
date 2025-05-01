@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Financeiro.Models.Objetos.Estoque;
 
 namespace Financeiro.WpfTelas.Telas
 {
@@ -22,6 +23,14 @@ namespace Financeiro.WpfTelas.Telas
         public winCadastroCategoriaProduto()
         {
             InitializeComponent();
+            oCategoriaProduto cat= new oCategoriaProduto();
+            DataContext = cat;
+            menuSalvar.btnSalvar.Click += BtnSalvar_Click;
+        }
+
+        private void BtnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            oCategoriaProduto cat = (oCategoriaProduto)DataContext;
         }
     }
 }

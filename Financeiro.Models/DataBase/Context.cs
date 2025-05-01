@@ -13,12 +13,6 @@ namespace Financeiro.Models.DataBase
 {
     public class Context :DbContext
     {
-        public DbSet<oMunicipio> dbMunicipio { get; set; }
-        public DbSet<oEstado> dbEstado { get; set; }
-        public DbSet<oPessoa> dbPessoa { get; set; }
-        public DbSet<oPessoaFisica> dbPessoaFisica { get; set; }
-        public DbSet<oPessoaJuridica> dbPessoaJuridica { get; set; }
-        public DbSet<oCliente> dbCliente { get; set; }
         public DbSet<oProduto> dbProduto { get; set; }
         public DbSet<oCategoriaProduto> dbCategoriaProduto { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

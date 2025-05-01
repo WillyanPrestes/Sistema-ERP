@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:Financeiro.WpfTelas"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <ControlTemplate x:Key="errorTemplate">
+            <!-- Align text box and error list horizontally -->
+            <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+
+                <AdornedElementPlaceholder x:Name="textBox"/>
+                <ItemsControl ItemsSource="{Binding}" IsTabStop="False">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ControlTemplate>
         <Style x:Key="MenuButton" TargetType="Button">
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="Transparent"/>

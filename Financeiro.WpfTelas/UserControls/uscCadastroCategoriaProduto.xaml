@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
-             mc:Ignorable="d" >
+             mc:Ignorable="d" >    
     <Grid Margin="10">
         <Border Background="White" Padding="20" CornerRadius="10">
             <StackPanel>
@@ -24,7 +24,8 @@
                     <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" Grid.ColumnSpan="3" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Descrição" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                              Text="{Binding Path=_Descricao, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                           Text="{Binding _Descricao, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                 </Grid>

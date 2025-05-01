@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Financeiro.Models\Financeiro.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Imagens\floppy-disk_346056.png" />
     <Resource Include="Imagens\multiply_399274.png" />
   </ItemGroup>
