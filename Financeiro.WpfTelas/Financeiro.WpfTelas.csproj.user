@@ -8,6 +8,12 @@
     <Compile Update="Telas\winCadastroProduto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Telas\winConsultaCategoriaProduto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\Menus\menuConsulta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Menus\menuSalvar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

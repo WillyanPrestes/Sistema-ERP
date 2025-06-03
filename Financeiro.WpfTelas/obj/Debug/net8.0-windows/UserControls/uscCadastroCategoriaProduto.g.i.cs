@@ -53,7 +53,8 @@ namespace Financeiro.WpfTelas.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;component/usercontrols/usccadastrocategoriaproduto.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;V1.0.0.0;component/usercontrols/usccadastrocategoriaproduto." +
+                    "xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\uscCadastroCategoriaProduto.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

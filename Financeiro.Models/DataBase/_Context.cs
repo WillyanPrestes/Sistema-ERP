@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Financeiro.Models.DataBase
 {
-    public class Context :DbContext
+    public class _Context :DbContext
     {
         public DbSet<oProduto> dbProduto { get; set; }
         public DbSet<oCategoriaProduto> dbCategoriaProduto { get; set; }

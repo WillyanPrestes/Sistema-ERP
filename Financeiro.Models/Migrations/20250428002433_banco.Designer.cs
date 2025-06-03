@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Financeiro.Models.Migrations
 {
-    [DbContext(typeof(Context))]
+    [DbContext(typeof(_Context))]
     [Migration("20250428002433_banco")]
     partial class banco
     {

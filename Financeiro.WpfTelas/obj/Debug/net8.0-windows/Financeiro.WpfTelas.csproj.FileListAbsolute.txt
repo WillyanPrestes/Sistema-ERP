@@ -62,3 +62,7 @@ C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\bin\Debug\net8.0
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\bin\Debug\net8.0-windows\Financeiro.Models.dll.config
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Financeiro.WpfTelas.csproj.AssemblyReference.cache
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Financei.B0645A90.Up2Date
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winConsultaCategoriaProduto.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuConsulta.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\Telas\winConsultaCategoriaProduto.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuConsulta.baml

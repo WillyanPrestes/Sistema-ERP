@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Financeiro.Models.Objetos.Estoque;
+using Financeiro.WpfTelas.Base;
 
 namespace Financeiro.WpfTelas.Telas
 {
@@ -20,17 +21,11 @@ namespace Financeiro.WpfTelas.Telas
     /// </summary>
     public partial class winCadastroCategoriaProduto : Window
     {
-        public winCadastroCategoriaProduto()
+        public winCadastroCategoriaProduto(oCategoriaProduto cat)
         {
             InitializeComponent();
-            oCategoriaProduto cat= new oCategoriaProduto();
-            DataContext = cat;
-            menuSalvar.btnSalvar.Click += BtnSalvar_Click;
-        }
-
-        private void BtnSalvar_Click(object sender, RoutedEventArgs e)
-        {
-            oCategoriaProduto cat = (oCategoriaProduto)DataContext;
+            oControllerMenuSalvar<oCategoriaProduto> con = new oControllerMenuSalvar<oCategoriaProduto>
+                (cat, this.menuSalvar, this);
         }
     }
 }

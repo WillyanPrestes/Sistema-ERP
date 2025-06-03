@@ -55,7 +55,7 @@ namespace Financeiro.WpfTelas.Telas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;component/telas/wincadastroproduto.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;V1.0.0.0;component/telas/wincadastroproduto.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Telas\winCadastroProduto.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
