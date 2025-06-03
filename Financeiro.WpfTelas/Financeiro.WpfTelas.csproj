@@ -9,8 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagens\adicionar.png" />
+    <None Remove="Imagens\caixote-de-lixo.png" />
     <None Remove="Imagens\floppy-disk_346056.png" />
+    <None Remove="Imagens\lapis.png" />
+    <None Remove="Imagens\lupa.png" />
     <None Remove="Imagens\multiply_399274.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Imagens\adicionar.png" />
+    <EmbeddedResource Include="Imagens\caixote-de-lixo.png" />
+    <EmbeddedResource Include="Imagens\lapis.png" />
+    <EmbeddedResource Include="Imagens\lupa.png" />
   </ItemGroup>
 
   <ItemGroup>
