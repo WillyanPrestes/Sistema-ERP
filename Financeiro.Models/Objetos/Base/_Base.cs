@@ -9,13 +9,25 @@ using System.Threading.Tasks;
 
 namespace Financeiro.Models.Objetos.Base
 {
-    public class _Validacao : INotifyPropertyChanged, INotifyDataErrorInfo
+    public class _Base : INotifyPropertyChanged, INotifyDataErrorInfo
     {
         private readonly Dictionary<string, object> _valores = new();
         private readonly Dictionary<string, List<string>> _erros = new();
 
         public event PropertyChangedEventHandler PropertyChanged;
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
+        public string retornoErroValidacao()
+        {
+            string erro = "";
+
+            foreach (var it in _erros)
+            {
+                erro += "\n" + it.Key + " - ERROS: ";
+                foreach(string val in it.Value)
+                    erro += val + ". ";
+            }
+            return erro;
+        }
 
         protected T GetValor<T>(string propriedade)
         {

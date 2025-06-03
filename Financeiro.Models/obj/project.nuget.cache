@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0jc1mOGgqDM=",
+  "dgSpecHash": "Bwsh1DObA0g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.Models\\Financeiro.Models.csproj",
+  "projectFilePath": "C:\\Users\\willy\\source\\repos\\Finaceiro\\Financeiro.Models\\Financeiro.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willy\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\willy\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",

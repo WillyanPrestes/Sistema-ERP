@@ -42,7 +42,7 @@ namespace Financeiro.WpfTelas
 
         private void btnCategoriaProdutos_Click(object sender, RoutedEventArgs e)
         {
-            winCadastroCategoriaProduto win =new winCadastroCategoriaProduto();
+            winCadastroCategoriaProduto win =new winCadastroCategoriaProduto(new Models.Objetos.Estoque.oCategoriaProduto());
             win.ShowDialog();
         }
     }
