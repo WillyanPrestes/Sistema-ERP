@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\telas\\clientes\\wincadastrocliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|solutionrelative:financeiro.wpftelas\\telas\\clientes\\wincadastrocliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\telas\\estoque\\wincadastroproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|solutionrelative:financeiro.wpftelas\\telas\\estoque\\wincadastroproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\usercontrols\\uscpessoa.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|solutionrelative:financeiro.wpftelas\\usercontrols\\uscpessoa.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\telas\\clientes\\wincadastrocliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|solutionrelative:financeiro.wpftelas\\telas\\clientes\\wincadastrocliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "uscPessoa.xaml",
               "DocumentMoniker": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\UserControls\\uscPessoa.xaml",
               "RelativeDocumentMoniker": "Financeiro.WpfTelas\\UserControls\\uscPessoa.xaml",
@@ -58,19 +58,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "winCadastroProduto.xaml",
               "DocumentMoniker": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\Telas\\Estoque\\winCadastroProduto.xaml",
               "RelativeDocumentMoniker": "Financeiro.WpfTelas\\Telas\\Estoque\\winCadastroProduto.xaml",
               "ToolTip": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\Telas\\Estoque\\winCadastroProduto.xaml",
               "RelativeToolTip": "Financeiro.WpfTelas\\Telas\\Estoque\\winCadastroProduto.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-10T02:23:26.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T02:23:26.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "winCadastroCliente.xaml",
               "DocumentMoniker": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\Telas\\Clientes\\winCadastroCliente.xaml",
               "RelativeDocumentMoniker": "Financeiro.WpfTelas\\Telas\\Clientes\\winCadastroCliente.xaml",
