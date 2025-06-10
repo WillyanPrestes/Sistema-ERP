@@ -75,6 +75,7 @@
             <Setter Property="SelectionUnit" Value="FullRow"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="15"/>
         </Style>
         
         <Style x:Key="BotaoSecundario" TargetType="Button" BasedOn="{StaticResource BotaoPadrao}">
@@ -91,26 +92,38 @@
             <Setter Property="Margin" Value="5,0,5,0"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
-
+        
+        
         <Style x:Key="ComumComboBox" TargetType="ComboBox">
             <Setter Property="Margin" Value="5,0,5,0"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
         
         <Style x:Key="ComumStackPanel" TargetType="StackPanel">
-            <Setter Property="Margin" Value="0,0,5,5"/>
+            <Setter Property="Margin" Value="0,0,5,10"/>
         </Style>
         
         <Style x:Key="ComumBlock" TargetType="TextBlock">
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="FontSize" Value="15"/>
         </Style>
 
+        <Style x:Key="BorderCadastro" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
         <Style x:Key="ComumTitulo" TargetType="TextBlock">
             <Setter Property="Margin" Value="5"/>
             <Setter Property="FontSize" Value="35"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="#2C3E50"/>
+        </Style>
+
+        <Style x:Key="win"  TargetType="Window">
+            <Setter Property="Height" Value="450"/>
+            <Setter Property="ResizeMode" Value="NoResize"/>
+            <Setter Property="Background" Value="#ECF0F1"/>
         </Style>
     </Application.Resources>
     

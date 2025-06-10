@@ -5,10 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
              mc:Ignorable="d" 
-             Height="400" d:DesignWidth="800"  Background="#ECF0F1">
+             Height="330" d:DesignWidth="800"  Background="#ECF0F1">
 
     <Grid Margin="10">
-        <Border Background="White" Padding="20" CornerRadius="10">
+        <Border  Style="{ StaticResource BorderCadastro}">
             <StackPanel>
                 <!-- Título -->
                 <TextBlock Text="Cadastro de Produto" Style="{StaticResource ComumTitulo}"/>
@@ -35,48 +35,57 @@
                     <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" Grid.ColumnSpan="3" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Descrição" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                                  Text="{Binding Path=_Descricao, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                  Text="{Binding Path=_Descricao, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Custo" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                                  Text="{Binding Path=_Custo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                  Text="{Binding Path=_Custo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Margem Lucro" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                            Text="{Binding Path=_MargemLucro, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            Text="{Binding Path=_MargemLucro, Mode=TwoWay, StringFormat=N2, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Preço da Venda" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                                Text="{Binding Path=_PrecoVenda, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                Text="{Binding Path=_PrecoVenda, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Estoque Minimo" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                            Text="{Binding Path=_EstoqueMinimo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            Text="{Binding Path=_EstoqueMinimo, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged, StringFormat=N2, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Estoque Atual" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                            Text="{Binding Path=_EstoqueAtual, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            Text="{Binding Path=_EstoqueAtual, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged, StringFormat=N2, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
 
                     <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Unidade de Medida" Style="{StaticResource ComumBlock}"/>
                         <TextBox  Style="{StaticResource ComumBox}"
-                            Text="{Binding Path=_UnidadeMedida, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            Text="{Binding Path=_UnidadeMedida, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"/>
                     </StackPanel>
                     <!-- Categoria Produto -->
 
                     <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" Grid.ColumnSpan="2" Style="{StaticResource ComumStackPanel}">
                         <TextBlock Text="Categoria do Produto"  Style="{StaticResource ComumBlock}"/>
-                        <ComboBox Grid.Row="8" Grid.Column="1" 
+                        <ComboBox Grid.Row="8" Grid.Column="1" x:Name="cmbCategoria" SelectedItem="{Binding Path=_CategoriaProduto, Mode=TwoWay,
+                            UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" 
+                            Validation.ErrorTemplate="{StaticResource errorTemplate}"
                               DisplayMemberPath="_Descricao"
                               SelectedValuePath="_IdCategoriaProduto" Style="{StaticResource ComumComboBox}"/>
 

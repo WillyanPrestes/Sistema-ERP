@@ -13,7 +13,7 @@ namespace Financeiro.Models.Objetos.Base
     {
         private readonly Dictionary<string, object> _valores = new();
         private readonly Dictionary<string, List<string>> _erros = new();
-
+        public string msgErros;
         public event PropertyChangedEventHandler PropertyChanged;
         public event EventHandler<DataErrorsChangedEventArgs> ErrorsChanged;
         public string retornoErroValidacao()
@@ -26,6 +26,7 @@ namespace Financeiro.Models.Objetos.Base
                 foreach(string val in it.Value)
                     erro += val + ". ";
             }
+            erro += "\n" + msgErros;
             return erro;
         }
 
@@ -68,7 +69,7 @@ namespace Financeiro.Models.Objetos.Base
         public bool HasErrors => _erros.Any(kv => kv.Value?.Count > 0);
 
         public IEnumerable GetErrors(string propriedade)
-        {
+      {
             if (string.IsNullOrEmpty(propriedade))
                 return _erros.SelectMany(kv => kv.Value);
 

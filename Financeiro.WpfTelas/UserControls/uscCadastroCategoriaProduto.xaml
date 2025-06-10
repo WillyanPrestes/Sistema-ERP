@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls"
              mc:Ignorable="d" >    
     <Grid Margin="10">
-        <Border Background="White" Padding="20" CornerRadius="10">
+        <Border Style="{StaticResource BorderCadastro}">
             <StackPanel>
                 <!-- Título -->
                 <TextBlock Text="Cadastro de Categoria de  Produtos" Style="{StaticResource ComumTitulo}"/>

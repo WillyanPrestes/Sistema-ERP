@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,21 +27,38 @@ namespace Financeiro.Models.Objetos.Estoque
             set => SetValor(value, nameof(_Descricao));
         }
 
-        public List<oCategoriaProduto> Buscar()
-        {
-            throw new NotImplementedException();
-        }
 
         public bool Deletar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var db = new _Context())
+                {
+                    if (this._IdCategoriaProduto > 0)
+                    {
+                        db.Remove(this);
+                        db.SaveChanges();
+                    }
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                msgErros = ex.InnerException?.Message ?? ex.Message;
+                return false;
+            }
+            catch (Exception ex)
+            {
+                msgErros = ex.Message;
+                return false;
+            }
+            return true;
         }
 
         public bool Salvar()
         {
             try
             {
-                using (var db = new Context())
+                using (var db = new _Context())
                 {
                     if (this._IdCategoriaProduto <= 0)
                         db.dbCategoriaProduto.Add(this);
@@ -60,8 +78,14 @@ namespace Financeiro.Models.Objetos.Estoque
                 return false;
             }
             return true;
-
         }
-        public string msgErros;
+
+        public List<oCategoriaProduto> Buscar(Expression<Func<oCategoriaProduto, bool>> expression = null)
+        {
+            List<oCategoriaProduto> lst = new List<oCategoriaProduto>();
+            using (var db = new _Context())
+                lst = expression != null ? db.dbCategoriaProduto.Where(expression).ToList() : lst = db.dbCategoriaProduto.ToList();
+            return lst;
+        }
     }
 }

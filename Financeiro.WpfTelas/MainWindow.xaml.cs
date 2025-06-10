@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Financeiro.WpfTelas.Telas;
+using Financeiro.WpfTelas.Telas.Estoque;
 
 namespace Financeiro.WpfTelas
 {
@@ -36,14 +37,16 @@ namespace Financeiro.WpfTelas
 
         private void btnProdutos_Click(object sender, RoutedEventArgs e)
         {
-            winCadastroProduto win = new winCadastroProduto();
+            winConsultaProduto win = new winConsultaProduto();
             win.ShowDialog();
         }
 
         private void btnCategoriaProdutos_Click(object sender, RoutedEventArgs e)
         {
-            winCadastroCategoriaProduto win =new winCadastroCategoriaProduto(new Models.Objetos.Estoque.oCategoriaProduto());
+            winConsultaCategoriaProduto win = new winConsultaCategoriaProduto();
             win.ShowDialog();
+            //winCadastroCategoriaProduto win =new winCadastroCategoriaProduto(new Models.Objetos.Estoque.oCategoriaProduto());
+            //win.ShowDialog();
         }
     }
 }

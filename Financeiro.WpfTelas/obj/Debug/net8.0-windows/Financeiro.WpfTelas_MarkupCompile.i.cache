@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\willy\source\repos\Finaceiro\Financeiro.WpfTelas\obj\Debug\net8.0-windows\
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\
 Financeiro.WpfTelas
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\willy\source\repos\Finaceiro\Financeiro.WpfTelas\App.xaml
-71918300849
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\App.xaml
+162056092492
 
-13-1749467956
-2201026307471
-MainWindow.xaml;Telas\winCadastroCategoriaProduto.xaml;Telas\winCadastroProduto.xaml;Telas\winConsultaCategoria.xaml;UserControls\Menus\menuSalvar.xaml;UserControls\uscCadastroCategoriaProduto.xaml;UserControls\uscCadastroProduto.xaml;
+25-1618488102
+220-423750201
+MainWindow.xaml;Telas\Clientes\winCadastroCliente.xaml;Telas\Clientes\winConsultaClientes.xaml;Telas\Clientes\winSelecionaPessoa.xaml;Telas\Estoque\winCadastroCategoriaProduto.xaml;Telas\Estoque\winCadastroProduto.xaml;Telas\Estoque\winConsultaCategoria.xaml;Telas\Estoque\winConsultaCategoriaProduto.xaml;Telas\Estoque\winConsultaProduto.xaml;UserControls\Menus\menuConsulta.xaml;UserControls\Menus\menuSalvar.xaml;UserControls\uscCadastroCategoriaProduto.xaml;UserControls\uscCadastroPessoaFisica.xaml;UserControls\uscCadastroProduto.xaml;UserControls\uscPessoa.xaml;UserControls\uscPessoaJuridica.xaml;
 
 True
 

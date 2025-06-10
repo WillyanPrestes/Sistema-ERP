@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Financeiro.WpfTelas" xmlns:usc="clr-namespace:Financeiro.WpfTelas.UserControls"
         mc:Ignorable="d"
          Title="ERP - Sistema de Gestão" Height="600" Width="1500"
-        WindowStartupLocation="CenterScreen" ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResize" WindowState="Maximized"
         Background="#ECF0F1">
     <Grid>
         <!-- Define as colunas: Menu lateral (200px) e o conteúdo principal -->

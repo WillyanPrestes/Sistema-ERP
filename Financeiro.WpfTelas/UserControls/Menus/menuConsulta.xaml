@@ -5,30 +5,30 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Financeiro.WpfTelas.UserControls.Menus"
              mc:Ignorable="d" 
-                      Height="125" d:DesignWidth="800">
+                      Height="80" d:DesignWidth="800">
     <Grid Background="#2C3E50">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="15,5,0,0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="15,0,0,0">
             <Button Background="Transparent" x:Name="btnNovo" BorderBrush="Transparent">
                 <StackPanel>
-                    <Image Source="/Imagens/adicionar.png" Width="80"/>
+                    <Image Source="/Imagens/adicionar.png" Width="55"/>
                     <TextBlock Text="Novo" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
                 </StackPanel>
             </Button>
-            <Button Background="Transparent" x:Name="btnEditar" BorderBrush="Transparent" Margin="25,0,0,0">
+            <Button Background="Transparent" x:Name="btnEditar" BorderBrush="Transparent" Margin="15,0,0,0">
                 <StackPanel>
-                    <Image Source="/Imagens/lapis.png"  Width="80"/>
+                    <Image Source="/Imagens/lapis.png"  Width="55"/>
                     <TextBlock Text="Editar" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
                 </StackPanel>
             </Button>
-            <Button Background="Transparent" x:Name="btnVisualizar" BorderBrush="Transparent" Margin="25,0,0,0">
+            <Button Background="Transparent" x:Name="btnVisualizar" BorderBrush="Transparent" Margin="15,0,0,0">
                 <StackPanel>
-                    <Image Source="/Imagens/lupa.png" Width="80"/>
-                    <TextBlock Text="Novo" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
+                    <Image Source="/Imagens/lupa.png" Width="55"/>
+                    <TextBlock Text="Detalhar" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
                 </StackPanel>
             </Button>
-            <Button Background="Transparent" x:Name="btnExcluir" BorderBrush="Transparent" Margin="25,0,0,0">
+            <Button Background="Transparent" x:Name="btnExcluir" BorderBrush="Transparent" Margin="15,0,0,0">
                 <StackPanel>
-                    <Image Source="/Imagens/caixote-de-lixo.png"  Width="80"/>
+                    <Image Source="/Imagens/caixote-de-lixo.png"  Width="55"/>
                     <TextBlock Text="Excluir" HorizontalAlignment="Center" Style="{StaticResource ComumBlock}" Foreground="White" />
                 </StackPanel>
             </Button>

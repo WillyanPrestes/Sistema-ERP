@@ -19,6 +19,108 @@ namespace Financeiro.Models.Migrations
                 .HasAnnotation("ProductVersion", "7.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oCliente", b =>
+                {
+                    b.Property<int?>("_IdCliente")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int?>("_IdPessoa")
+                        .HasColumnType("int");
+
+                    b.HasKey("_IdCliente");
+
+                    b.HasIndex("_IdPessoa");
+
+                    b.ToTable("dbCliente");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oEstado", b =>
+                {
+                    b.Property<int?>("_IdEstado")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("_Descricao")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Uf")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("_IdEstado");
+
+                    b.ToTable("Estado");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oMunicipio", b =>
+                {
+                    b.Property<int?>("_IdMunicipio")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("_Descricao")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int?>("_IdEstado")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.HasKey("_IdMunicipio");
+
+                    b.HasIndex("_IdEstado");
+
+                    b.ToTable("Municipio");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oPessoa", b =>
+                {
+                    b.Property<int?>("_IdPessoa")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Bairro")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Celular")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Cep")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Email")
+                        .HasColumnType("longtext");
+
+                    b.Property<int?>("_IdMunicipio")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("_Logradouro")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Numero")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Telefone")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("_IdPessoa");
+
+                    b.HasIndex("_IdMunicipio");
+
+                    b.ToTable("oPessoa");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("oPessoa");
+
+                    b.UseTphMappingStrategy();
+                });
+
             modelBuilder.Entity("Financeiro.Models.Objetos.Estoque.oCategoriaProduto", b =>
                 {
                     b.Property<int>("_IdCategoriaProduto")
@@ -36,40 +138,33 @@ namespace Financeiro.Models.Migrations
 
             modelBuilder.Entity("Financeiro.Models.Objetos.Estoque.oProduto", b =>
                 {
-                    b.Property<int?>("_IdProduto")
+                    b.Property<int>("_IdProduto")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<bool?>("_Ativo")
-                        .IsRequired()
+                    b.Property<bool>("_Ativo")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<decimal?>("_Custo")
-                        .IsRequired()
+                    b.Property<decimal>("_Custo")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("_Descricao")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<decimal?>("_EstoqueAtual")
-                        .IsRequired()
+                    b.Property<decimal>("_EstoqueAtual")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("_EstoqueMinimo")
-                        .IsRequired()
+                    b.Property<decimal>("_EstoqueMinimo")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("_IdCategoriaProduto")
-                        .IsRequired()
+                    b.Property<int>("_IdCategoriaProduto")
                         .HasColumnType("int");
 
-                    b.Property<decimal?>("_MargemLucro")
-                        .IsRequired()
+                    b.Property<decimal>("_MargemLucro")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal?>("_PrecoVenda")
-                        .IsRequired()
+                    b.Property<decimal>("_PrecoVenda")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("_UnidadeMedida")
@@ -83,6 +178,74 @@ namespace Financeiro.Models.Migrations
                     b.ToTable("dbProduto");
                 });
 
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oPessoaFisica", b =>
+                {
+                    b.HasBaseType("Financeiro.Models.Objetos.Cadastros.oPessoa");
+
+                    b.Property<string>("_Apelido")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_CPF")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasDiscriminator().HasValue("oPessoaFisica");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oPessoaJuridica", b =>
+                {
+                    b.HasBaseType("Financeiro.Models.Objetos.Cadastros.oPessoa");
+
+                    b.Property<string>("_CNPJ")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_IE")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_NomeFantasia")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("_RazaoSocial")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasDiscriminator().HasValue("oPessoaJuridica");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oCliente", b =>
+                {
+                    b.HasOne("Financeiro.Models.Objetos.Cadastros.oPessoa", "_Pessoa")
+                        .WithMany()
+                        .HasForeignKey("_IdPessoa");
+
+                    b.Navigation("_Pessoa");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oMunicipio", b =>
+                {
+                    b.HasOne("Financeiro.Models.Objetos.Cadastros.oEstado", "_Estado")
+                        .WithMany()
+                        .HasForeignKey("_IdEstado")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("_Estado");
+                });
+
+            modelBuilder.Entity("Financeiro.Models.Objetos.Cadastros.oPessoa", b =>
+                {
+                    b.HasOne("Financeiro.Models.Objetos.Cadastros.oMunicipio", "_Municipio")
+                        .WithMany()
+                        .HasForeignKey("_IdMunicipio")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("_Municipio");
+                });
+
             modelBuilder.Entity("Financeiro.Models.Objetos.Estoque.oProduto", b =>
                 {
                     b.HasOne("Financeiro.Models.Objetos.Estoque.oCategoriaProduto", "_CategoriaProduto")
@@ -93,6 +256,7 @@ namespace Financeiro.Models.Migrations
 
                     b.Navigation("_CategoriaProduto");
                 });
+
 #pragma warning restore 612, 618
         }
     }

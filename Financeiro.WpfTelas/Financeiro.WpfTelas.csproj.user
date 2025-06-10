@@ -2,22 +2,43 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Telas\winCadastroCategoriaProduto.xaml.cs">
+    <Compile Update="Telas\Clientes\winCadastroCliente.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Telas\winCadastroProduto.xaml.cs">
+    <Compile Update="Telas\Clientes\winConsultaClientes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Telas\winConsultaCategoria.xaml.cs">
+    <Compile Update="Telas\Clientes\winSelecionaPessoa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Telas\Estoque\winCadastroCategoriaProduto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Telas\Estoque\winCadastroProduto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Telas\Estoque\winConsultaCategoria.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Telas\Estoque\winConsultaProduto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControls\Menus\menuSalvar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\uscPessoa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\uscCadastroCategoriaProduto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\uscCadastroPessoaFisica.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\uscCadastroProduto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\uscPessoaJuridica.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

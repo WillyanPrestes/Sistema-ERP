@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Financeiro.Models.Objetos.Estoque;
 
 namespace Financeiro.WpfTelas.UserControls
 {
@@ -23,6 +24,7 @@ namespace Financeiro.WpfTelas.UserControls
         public uscCadastroProduto()
         {
             InitializeComponent();
+            cmbCategoria.ItemsSource = new oCategoriaProduto().Buscar();
         }
 
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Financeiro.Models.Interface;
 using Financeiro.Models.Objetos.Base;
 using Financeiro.WpfTelas.UserControls.Menus;
 
@@ -27,14 +28,18 @@ namespace Financeiro.WpfTelas.Base
                 string erro = "";
                 L _obj = (L)_win.DataContext;
                 if (_obj != null)
-                    if (_obj is inBase<L> basee)
-                        if (basee.Salvar(ref erro))
+                    if (_obj is inBaseObject<L> basee)
+                        if (basee.Salvar())
                         {
                             MessageBox.Show("Salvo com Sucesso", "Salvo", MessageBoxButton.OK, MessageBoxImage.Information);
                             _win.Close();
                         }
                         else
-                            MessageBox.Show("Erro ao Salvar, verifique os erros.\n"+erro, "ERRO", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        {
+                            if (_obj is _Base b)
+                                erro = b.msgErros;
+                            MessageBox.Show("Erro ao Salvar, verifique os erros.\n" + erro, "ERRO", MessageBoxButton.OK, MessageBoxImage.Warning);
+                        }
             }
             catch (Exception ex)
             {

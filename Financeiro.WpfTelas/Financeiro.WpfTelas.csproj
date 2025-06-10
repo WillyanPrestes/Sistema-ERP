@@ -18,10 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Imagens\adicionar.png" />
-    <EmbeddedResource Include="Imagens\caixote-de-lixo.png" />
-    <EmbeddedResource Include="Imagens\lapis.png" />
-    <EmbeddedResource Include="Imagens\lupa.png" />
+    <Resource Include="Imagens\adicionar.png" />
+    <Resource Include="Imagens\caixote-de-lixo.png" />
+    <Resource Include="Imagens\lapis.png" />
+    <Resource Include="Imagens\lupa.png" />
   </ItemGroup>
 
   <ItemGroup>
