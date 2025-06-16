@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Financeiro.Models.Objetos.Cadastros;
+using Financeiro.Models.Objetos.Estoque;
+using Financeiro.WpfTelas.Controllers;
+using Financeiro.WpfTelas.UserControls.Menus;
 
 namespace Financeiro.WpfTelas.Telas.Clientes
 {
@@ -19,9 +23,10 @@ namespace Financeiro.WpfTelas.Telas.Clientes
     /// </summary>
     public partial class winCadastroCliente : Window
     {
-        public winCadastroCliente()
+        public winCadastroCliente(oCliente cliente)
         {
             InitializeComponent();
+            new ControlerSalvar<oCliente>(cliente, this, menuSalvar);
         }
     }
 }

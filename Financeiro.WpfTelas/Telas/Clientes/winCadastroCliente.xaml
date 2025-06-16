@@ -13,7 +13,8 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <menus:menuSalvar/>
-        <usc:uscPessoaJuridica Grid.Row="1"/>
+        <menus:menuSalvar x:Name="menuSalvar"/>
+        <usc:uscPessoaJuridica Grid.Row="1" x:Name="uscPessoaJuridica" Visibility="Collapsed"/>
+        <usc:uscPessoaFisica Grid.Row="1" x:Name="uscPessoaFisica" Visibility="Collapsed"/>
     </Grid>
 </Window>

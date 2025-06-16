@@ -3,10 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Financeiro.WpfTelas.Telas.Clientes"
+        xmlns:local="clr-namespace:Financeiro.WpfTelas.Telas.Clientes" 
+        xmlns:menus="clr-namespace:Financeiro.WpfTelas.UserControls.Menus"
         mc:Ignorable="d"
-        Title="winSelecionaPessoa" Height="450" Width="800">
+        Title="winSelecionaPessoa" Height="200" Width="500" Style="{StaticResource win}">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <menus:menuConfirmar Grid.ColumnSpan="3" x:Name="menuConfirma"/>
+        <TextBlock Grid.Row="1" Style="{StaticResource ComumTitulo}" Grid.ColumnSpan="3">Selecione o Tipo de Pessoa</TextBlock>
+        <RadioButton Content="Pessoa Física" x:Name="rbFisica" HorizontalAlignment="Left" Margin="15,0,0,0"  Grid.Row="2" Style="{StaticResource comumRadioButton}" GroupName="Pessoas" IsChecked="True"/>
+        <RadioButton Content="Pessoa Jurídica" x:Name="rbJuridica" HorizontalAlignment="Left" Margin="15,0,0,0" Grid.Row="2" Grid.Column="1" Style="{StaticResource comumRadioButton}"  GroupName="Pessoas"/>
     </Grid>
 </Window>

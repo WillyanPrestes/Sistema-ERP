@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Financeiro.Models.Objetos.Cadastros;
 
 namespace Financeiro.WpfTelas.Telas.Clientes
 {
@@ -22,6 +23,28 @@ namespace Financeiro.WpfTelas.Telas.Clientes
         public winSelecionaPessoa()
         {
             InitializeComponent();
+            menuConfirma.btnConfirmar.Click += BtnConfirmar_Click;
+            menuConfirma.btnSair.Click += BtnSair_Click;
+        }
+
+        private void BtnSair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnConfirmar_Click(object sender, RoutedEventArgs e)
+        {
+            winCadastroCliente win;
+            if (rbFisica.IsChecked == true)
+            {
+                win = new winCadastroCliente(new oCliente(new oPessoaFisica()));
+                win.ShowDialog();
+            }
+            else if (rbJuridica.IsChecked == true)
+            {
+                win = new winCadastroCliente(new oCliente(new oPessoaFisica()));
+                win.ShowDialog();
+            }
         }
     }
 }

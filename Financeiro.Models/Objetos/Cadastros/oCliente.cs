@@ -15,6 +15,12 @@ namespace Financeiro.Models.Objetos.Cadastros
 {
     public class oCliente : _Base, inBaseObject<oCliente>
     {
+        public oCliente() 
+        { }
+        public oCliente(oPessoa oPessoa)
+        {
+            _Pessoa = oPessoa;
+        }
         [Key]
         public int? _IdCliente {
             get => GetValor<int>(nameof(_IdCliente));

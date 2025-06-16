@@ -63,7 +63,8 @@ namespace Financeiro.WpfTelas.Telas.Estoque {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;component/telas/estoque/wincadastrocategoriaproduto.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;V1.0.0.0;component/telas/estoque/wincadastrocategoriaproduto" +
+                    ".xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Telas\Estoque\winCadastroCategoriaProduto.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

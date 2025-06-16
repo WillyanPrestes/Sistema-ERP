@@ -115,7 +115,7 @@
         </Style>
         <Style x:Key="ComumTitulo" TargetType="TextBlock">
             <Setter Property="Margin" Value="5"/>
-            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="FontSize" Value="25"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="#2C3E50"/>
         </Style>
@@ -124,6 +124,12 @@
             <Setter Property="Height" Value="450"/>
             <Setter Property="ResizeMode" Value="NoResize"/>
             <Setter Property="Background" Value="#ECF0F1"/>
+        </Style>
+
+        <Style x:Key="comumRadioButton" TargetType="RadioButton">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="15"/>
         </Style>
     </Application.Resources>
     

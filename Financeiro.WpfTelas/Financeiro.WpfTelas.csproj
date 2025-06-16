@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Imagens\adicionar.png" />
     <None Remove="Imagens\caixote-de-lixo.png" />
+    <None Remove="Imagens\Confirmar.png" />
     <None Remove="Imagens\floppy-disk_346056.png" />
     <None Remove="Imagens\lapis.png" />
     <None Remove="Imagens\lupa.png" />
@@ -20,6 +21,7 @@
   <ItemGroup>
     <Resource Include="Imagens\adicionar.png" />
     <Resource Include="Imagens\caixote-de-lixo.png" />
+    <Resource Include="Imagens\Confirmar.png" />
     <Resource Include="Imagens\lapis.png" />
     <Resource Include="Imagens\lupa.png" />
   </ItemGroup>

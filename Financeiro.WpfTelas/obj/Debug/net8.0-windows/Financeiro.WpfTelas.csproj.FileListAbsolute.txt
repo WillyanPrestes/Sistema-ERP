@@ -146,3 +146,5 @@ C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscPessoa.baml
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscPessoaJuridica.g.cs
 C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\uscPessoaJuridica.baml
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuConfirmar.g.cs
+C:\Users\willy\Documents\GitHub\Sistema-ERP\Financeiro.WpfTelas\obj\Debug\net8.0-windows\UserControls\Menus\menuConfirmar.baml

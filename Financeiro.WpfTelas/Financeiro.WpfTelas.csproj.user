@@ -23,6 +23,9 @@
     <Compile Update="Telas\Estoque\winConsultaProduto.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControls\Menus\menuConfirmar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControls\Menus\menuSalvar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

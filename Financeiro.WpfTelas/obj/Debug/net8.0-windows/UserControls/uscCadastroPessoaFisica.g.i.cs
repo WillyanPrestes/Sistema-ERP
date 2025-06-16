@@ -53,7 +53,8 @@ namespace Financeiro.WpfTelas.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;component/usercontrols/usccadastropessoafisica.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;V1.0.0.0;component/usercontrols/usccadastropessoafisica.xaml" +
+                    "", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\uscCadastroPessoaFisica.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
