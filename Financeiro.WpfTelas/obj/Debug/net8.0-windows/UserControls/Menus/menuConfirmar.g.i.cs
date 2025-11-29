@@ -69,7 +69,7 @@ namespace Financeiro.WpfTelas.UserControls.Menus {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;V1.0.0.0;component/usercontrols/menus/menuconfirmar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Financeiro.WpfTelas;component/usercontrols/menus/menuconfirmar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\UserControls\Menus\menuConfirmar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

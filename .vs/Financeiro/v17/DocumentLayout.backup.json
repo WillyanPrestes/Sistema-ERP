@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F00FDF63-DD1F-6C12-FCC4-ECF385E32EC6}|..\\..\\Codigos\\Estudando\\Estudando\\Estudando.csproj|c:\\users\\willy\\documents\\codigos\\estudando\\estudando\\arq.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{620B9D94-F143-451A-B6CE-C8B2D634E1C7}|Financeiro.Models\\Financeiro.Models.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.models\\objetos\\estoque\\oproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{620B9D94-F143-451A-B6CE-C8B2D634E1C7}|Financeiro.Models\\Financeiro.Models.csproj|solutionrelative:financeiro.models\\objetos\\estoque\\oproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|c:\\users\\willy\\documents\\github\\sistema-erp\\financeiro.wpftelas\\usercontrols\\usccadastroproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8A9A5E32-8C95-49B6-B84A-7F1665ECBE07}|Financeiro.WpfTelas\\Financeiro.WpfTelas.csproj|solutionrelative:financeiro.wpftelas\\usercontrols\\usccadastroproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "arq.php",
+              "DocumentMoniker": "C:\\Users\\willy\\Documents\\Codigos\\Estudando\\Estudando\\arq.php",
+              "RelativeDocumentMoniker": "..\\..\\Codigos\\Estudando\\Estudando\\arq.php",
+              "ToolTip": "C:\\Users\\willy\\Documents\\Codigos\\Estudando\\Estudando\\arq.php",
+              "RelativeToolTip": "..\\..\\Codigos\\Estudando\\Estudando\\arq.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-11-29T17:44:33.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "uscCadastroProduto.xaml",
+              "DocumentMoniker": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\UserControls\\uscCadastroProduto.xaml",
+              "RelativeDocumentMoniker": "Financeiro.WpfTelas\\UserControls\\uscCadastroProduto.xaml",
+              "ToolTip": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.WpfTelas\\UserControls\\uscCadastroProduto.xaml",
+              "RelativeToolTip": "Financeiro.WpfTelas\\UserControls\\uscCadastroProduto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T19:27:48.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "oProduto.cs",
+              "DocumentMoniker": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.Models\\Objetos\\Estoque\\oProduto.cs",
+              "RelativeDocumentMoniker": "Financeiro.Models\\Objetos\\Estoque\\oProduto.cs",
+              "ToolTip": "C:\\Users\\willy\\Documents\\GitHub\\Sistema-ERP\\Financeiro.Models\\Objetos\\Estoque\\oProduto.cs",
+              "RelativeToolTip": "Financeiro.Models\\Objetos\\Estoque\\oProduto.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwGoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T18:29:50.452Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
